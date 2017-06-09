@@ -8,3 +8,4 @@ Feature: As a non-logged in user, if I go to /wp-admin/ I should be redirected t
   Scenario: On the CAS login page I should see CWL Login Authentication
     Given I go to "http://cms.ubc.ca/wp-admin/"
     Then I should see "Campus-Wide Login Authentication"
+    And I should see "Need Help?"
