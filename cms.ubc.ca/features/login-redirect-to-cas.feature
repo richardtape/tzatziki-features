@@ -3,7 +3,7 @@ Feature: As a non-logged in user, if I go to /wp-admin/ I should be redirected t
 
   Scenario: Visiting cms.ubc.ca/wp-admin/ redirects me to the CAS login page
     Given I go to "http://cms.ubc.ca/wp-admin/"
-    Then the url should match "/ubc-cas/login/\w+"
+    Then I should see "/ubc-cas/login/" in the URL
 
   Scenario: On the CAS login page I should see CWL Login Authentication
     Given I go to "http://cms.ubc.ca/wp-admin/"
